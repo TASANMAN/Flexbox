@@ -13,7 +13,7 @@ body {
 
 header {
   color: black;
-  padding: 10px 20px;
+  padding: 15px 25px;
   display: flex;
   justify-content: space-between; /* Espacia los elementos */
   align-items: center;
@@ -42,7 +42,7 @@ nav ul li a {
 
 .container {
   display: flex; /* Usamos Flexbox para alinear imagen y texto */
-  padding: 20px;
+  padding: 40px;
 }
 
 .text-content {
@@ -54,6 +54,29 @@ nav ul li a {
 .text-content h1,
 .text-content p {
   margin: 0;
+  padding: 20px;
+}
+
+.text-content img {
+  justify-content: flex-end; /* Alinea el contenido al final del contenedor (derecha) */
+}
+
+.button {
+  display: flex; /* Asegura que el botón se comporte como un bloque en línea */
+  padding: 10px; /* Espaciado interno del botón */
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #fff; /* Color del texto */
+  background-color: blue; /* Color de fondo del botón */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+  border: none; /* Elimina el borde del botón, si es un <button> */
+  margin-inline: auto;
+  width: 100px;
+}
+
+.button:hover {
+  background-color: grey; /* Color de fondo cuando el botón es hovered */
 }
 
 .content {
@@ -65,9 +88,59 @@ article {
   margin-bottom: 20px;
 }
 
+.images h2 {
+  display: flex;
+  margin: 0;
+  padding: 20px;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex; /* Activa Flexbox en el contenedor */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  justify-content: space-around; /* Espacia los tooltips de manera uniforme */
+  gap: 50px;
+  padding: 20px; /* Espaciado interno del contenedor */
+  background-color: #f4f4f4; /* Fondo blanco para el contenedor */
+  border: 1px solid black; /* Borde gris claro para el contenedor */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-bottom: 20px;
+}
+
+.tooltip-container {
+  position: relative; /* Posiciona el tooltip correctamente en relación a la imagen */
+  display: inline-block; /* Permite que el contenedor tenga solo el ancho necesario */
+}
+
+.tooltip-image {
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+}
+
+.tooltip-text {
+  visibility: hidden; /* Oculta el tooltip por defecto */
+  width: 150px; /* Ancho del tooltip */
+  background-color: #333; /* Color de fondo del tooltip */
+  color: #fff; /* Color del texto del tooltip */
+  text-align: center; /* Centra el texto dentro del tooltip */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px; /* Espaciado interno del tooltip */
+  position: absolute; /* Posiciona el tooltip de manera absoluta */
+  z-index: 1; /* Asegura que el tooltip esté encima del contenido */
+  bottom: 125%; /* Posiciona el tooltip arriba de la imagen */
+  left: 50%; /* Centra el tooltip horizontalmente */
+  margin-left: -75px; /* Ajusta el tooltip horizontalmente */
+  opacity: 0; /* Hace que el tooltip sea invisible */
+  transition: opacity 0.3s; /* Transición suave para la aparición del tooltip */
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible; /* Muestra el tooltip cuando se pasa el ratón */
+  opacity: 1; /* Hace que el tooltip sea visible */
+}
+
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 10px 20px;
   text-align: center;
 }
