@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos */
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex; /* Asegura que los elementos de la lista estén en línea horizontalmente */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  display: flex; /* Usamos Flexbox para alinear imagen y texto */
+  padding: 20px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos internos en columna */
+  max-width: 1000px; /* Limita el ancho del texto para mejor lectura */
+}
+
+.text-content h1,
+.text-content p {
+  margin: 0;
+}
+
+.content {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  nav ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content {
+    padding: 15px;
+  }
+}
+
+/* Estilos para pantallas grandes (desktops) */
+@media (min-width: 1025px) {
+  .content {
+    padding: 20px;
+  }
+}
