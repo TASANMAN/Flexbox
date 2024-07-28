@@ -1,3 +1,4 @@
+/* Reseteo general */
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@ header {
   align-items: center;
 }
 
+/* Menu */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -41,7 +43,7 @@ nav ul li a {
 }
 
 .container {
-  display: flex; /* Usamos Flexbox para alinear imagen y texto */
+  display: flex;
   padding: 40px;
 }
 
@@ -62,13 +64,13 @@ nav ul li a {
 }
 
 .button {
-  display: flex; /* Asegura que el botón se comporte como un bloque en línea */
-  padding: 10px; /* Espaciado interno del botón */
-  font-size: 16px; /* Tamaño de la fuente */
-  color: #fff; /* Color del texto */
-  background-color: blue; /* Color de fondo del botón */
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: blue;
   text-decoration: none; /* Elimina el subrayado del enlace */
-  border-radius: 5px; /* Bordes redondeados */
+  border-radius: 5px;
   transition: background-color 0.3s; /* Transición suave para el cambio de color */
   border: none; /* Elimina el borde del botón, si es un <button> */
   margin-inline: auto;
@@ -76,7 +78,7 @@ nav ul li a {
 }
 
 .button:hover {
-  background-color: grey; /* Color de fondo cuando el botón es hovered */
+  background-color: grey;
 }
 
 .content {
@@ -96,14 +98,14 @@ article {
 }
 
 .image-container {
-  display: flex; /* Activa Flexbox en el contenedor */
+  display: flex;
   justify-content: center; /* Centra las imágenes horizontalmente */
   justify-content: space-around; /* Espacia los tooltips de manera uniforme */
   gap: 50px;
-  padding: 20px; /* Espaciado interno del contenedor */
-  background-color: #f4f4f4; /* Fondo blanco para el contenedor */
-  border: 1px solid black; /* Borde gris claro para el contenedor */
-  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid black;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 
@@ -119,10 +121,10 @@ article {
 .tooltip-text {
   visibility: hidden; /* Oculta el tooltip por defecto */
   width: 150px; /* Ancho del tooltip */
-  background-color: black; /* Color de fondo del tooltip */
-  color: white; /* Color del texto del tooltip */
+  background-color: black;
+  color: white;
   text-align: center; /* Centra el texto dentro del tooltip */
-  border-radius: 5px; /* Bordes redondeados */
+  border-radius: 5px;
   padding: 5px; /* Espaciado interno del tooltip */
   position: absolute; /* Posiciona el tooltip de manera absoluta */
   z-index: 1; /* Asegura que el tooltip esté encima del contenido */
