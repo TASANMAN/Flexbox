@@ -22,24 +22,30 @@ header {
 
 /* Menu */
 nav {
-  display: flex;
-  justify-content: flex-end;
+  padding: 10px; /* Espacio alrededor del menú */
 }
 
-nav ul {
-  display: flex; /* Asegura que los elementos de la lista estén en línea horizontalmente */
+ul {
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  list-style-type: none;
+  display: flex;
+  justify-content: space-around; /* Distribuir los elementos con espacio alrededor */
 }
 
-nav ul li {
-  margin: 0 10px;
+li {
+  margin: 0 15px; /* Separar los elementos de la lista */
 }
 
-nav ul li a {
+a {
   color: black;
-  text-decoration: none;
+  text-decoration: none; /* Quitar el subrayado de los enlaces */
+  display: block; /* Hacer que el enlace ocupe el área completa del li */
+  padding: 10px 15px; /* Espacio interno en los enlaces */
+}
+
+a:hover {
+  background-color: #f9f4ef;
 }
 
 .container {
@@ -60,7 +66,15 @@ nav ul li a {
 }
 
 .text-content img {
-  justify-content: flex-end; /* Alinea el contenido al final del contenedor (derecha) */
+  text-align: right;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción original de la imagen */
+  display: block;
+  overflow: hidden; /* Antidesbordamiento */
 }
 
 .button {
